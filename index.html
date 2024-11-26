@@ -3,20 +3,21 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="device-width", initial scale="1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Application</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="screen">
         <div class="search">
-            <input type="text" placeholder="Enter location" class="inputBar">
-            <button class="searchBtn">🔎</button> 
+            <input type="text" placeholder="Enter location" class="inputBar" id="input">
+            <button class="searchBtn" onclick="checkWeather(document.getElementById('input').value)">🔎</button> 
         </div>
         <div class="weather">
             <p class="icon">🌞</p>
-            <h1 class="temp">69℃</h1>
-            <h2 class="city">place</h2>
+            <p class="iconDes">description</p>
+            <h1 class="temp">__℃</h1>
+            <h2 class="city">Your City</h2>
         </div>
     </div>
 
