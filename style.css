@@ -1,3 +1,51 @@
 /* Stylesheet fpr weather application
    Author: Tyler Hughes  
 */ 
+body{
+    background-color: rgb(63, 62, 62);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+.screen{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 5;
+    background-color: aqua;
+    border-radius: 10px;
+    max-width: 470px;
+    overflow: hidden;
+
+}
+.search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.inputBar{
+    flex: 1;
+    padding: 15px;
+    font-size: 1.5rem;
+    text-align: left;
+    border-radius: 5;
+}
+.searchBtn{
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    border: none;
+    background-color: rgb(61, 91, 226);
+    color: black;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+    flex: 2;
+    margin-right: 16px;
+    font-size: 2rem;
+}
+button:hover{
+   background-color: hsl(0, 0%, 50%);
+}
+button:active{
+   background-color: hsl(0, 0%, 40%);
+}
