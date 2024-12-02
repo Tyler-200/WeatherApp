@@ -18,8 +18,6 @@ async function checkWeather(place){
     document.querySelector(".temp").innerHTML = Math.round(data.main.temp) + "℃";
 
     var weather = data.weather[0].main;
-    console.log(weather);
-    console.log(data.weather.icon);
 
     switch(weather){
         case "Clear":
@@ -47,8 +45,9 @@ async function checkWeather(place){
             document.querySelector(".iconDes").innerHTML = "Snow";
         break;
         default:
+            // if the weaather type is not in the above list
             document.querySelector(".icon").innerHTML = "🚫";
-            document.querySelector(".iconDes").innerHTML = "undefined";
+            document.querySelector(".iconDes").innerHTML = weather;
     }
 
 }

@@ -1,6 +1,7 @@
 /* Stylesheet fpr weather application
    Author: Tyler Hughes  
 */ 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
 body{
     background-color: rgb(63, 62, 62);
     margin: 0;
@@ -8,9 +9,10 @@ body{
     justify-content: center;
 }
 .screen{
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;
     border-radius: 5;
-    background-color: aqua;
+    background: linear-gradient(#979797, #b0e5fa);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     max-width: 500px;
     overflow: hidden;
@@ -27,18 +29,20 @@ body{
 }
 .inputBar{
     flex: 1;
-    padding: 15px;
-    font-size: 1.5rem;
+    padding: 15px 20px;
+    font-size: 1.2rem;
     text-align: left;
     border-radius: 50px;
+    border: 2px solid #3f72af;
+    transition: all 0.3s;
 }
 .searchBtn{
     width: 70px;
     height: 70px;
     border-radius: 50px;
     border: none;
-    background-color: rgb(61, 91, 226);
-    color: black;
+    background: linear-gradient(135deg, #3f72af, #112d4e);
+    transition: transform 0.2s;
     font-size: 3rem;
     font-weight: bold;
     cursor: pointer;
@@ -61,8 +65,25 @@ body{
     font-size: 1rem;
 }
 button:hover{
-   background-color: hsl(0, 0%, 50%);
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #112d4e, #3f72af);
 }
 button:active{
    background-color: hsl(0, 0%, 40%);
+}
+.inputBar:focus {
+    border-color: #112d4e;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+footer {
+    text-align: center;
+    padding: 10px 20px;
+    background: #3f72af; /* Matches button color */
+    color: white;
+    font-size: 0.9rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
 }
